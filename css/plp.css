@@ -1,0 +1,99 @@
+.plp__router{
+    height: 40px;
+    border: 1px solid #CBCBCB;
+    display: flex;
+    align-items: center;
+}
+.plp__router--link{
+    width: 138px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    text-decoration: none;
+    color:#CBCBCB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plp__router--span{
+    color: black;
+}
+.plp__title{
+    text-align: center;
+    font-family: 'Philosopher';
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 40px 0%;
+}
+
+/* Shop */
+.shop__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.shop__title{
+    font-family: 'Philosopher';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0%;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.shop__text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 170%;
+    text-align: center;
+    margin: 0%;
+}
+.shop__item--content{
+    width: 390px;
+    margin: auto;
+}
+.shop__content{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    padding-top: 16px;
+    border-top: 1px solid #CBCBCB;
+}
+.shop__content b{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.shop__item--box{
+    text-align: center;
+}
+.shop__subtitle{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.shop__item{
+    width: 480px;
+    height: 635px;
+    border: 1px solid #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop__item--price{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    margin: 0%;
+}
+.shop__stars{
+    list-style-type: none;
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLP Page</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/plp.css">
+
+    <!-- Google Fonts -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!-- 'Philosopher' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Javascript -->
+    <script src="../js/script.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__info">
+        <div class="container">
+            <div class="header__info--wrapper">
+                <img class="header__info--left" src="../media/svg/left.svg" alt="left">
+                <div class="swiper announcement">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="header__info--title">Free domestic shipping on orders over $50 <a href="#" class="header__info--link">Learn more</a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="header__info--title">Lorem ipsum dolor sit amet consectetur adipisicing elit.<a href="#" class="header__info--link">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <img class="header__info--right" src="../media/svg/right.svg" alt="right">
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <ul class="header__submenu">
+                            <li class="header__subitem">
+                                <a onclick="myFunction()" href="#" class="header__link dropbtn">Shop <img src="../media/svg/arrow.svg" alt="arrow"></a>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </li>
+                            <li class="header__subitem">
+                                <a href="#" class="header__link">About</a>
+                            </li>
+                            <li class="header__subitem">
+                                <a onclick="stuffFunction()" href="#" class="header__link dropButton">Fun Stuff <img src="../media/svg/arrow.svg" alt="arrow"></a>
+                                <div id="myFunStuff" class="funstuff-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </li>
+                            <li class="header__subitem">
+                                <a href="#" class="header__link">Find Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                        <img class="header__item--hidden" id="menu" src="../media/svg/menu.svg" alt="menu">
+                        <!-- Header Hidden Menu -->
+                        <ul class="header__hidden--menu">
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">Shop <img src="../media/svg/arrow.svg" alt="arrow"></a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">About</a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">Fun Stuff <img src="../media/svg/arrow.svg" alt="arrow"></a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">Find Us</a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">
+                                    <img src="../media/svg/usa.svg" alt="usa"> Usa <img src="../media/svg/arrow.svg" alt="arrow">
+                                </a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">Contact</a>
+                            </li>
+                            <li class="header__hidden--item">
+                                <a href="#" class="header__hidden--link">Log In</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a class="header__link header__logo" href="#">
+                            <img src="../media/svg/logo.svg" alt="logo">
+                        </a>
+                    </li>
+                        <img class="header__item--hidden" src="../media/svg/cart.svg" alt="cart">
+                    <li class="header__item">
+                        <ul class="header__submenu">
+                            <li class="header__subitem">
+                                <a href="#" class="header__link">
+                                    <img src="../media/svg/usa.svg" alt="usa">  
+                                    <!-- <img src="./media/svg/arrow.svg" alt="arrow"> -->
+                                    <select class="header__select header__link" name="" id="">
+                                        <option class="header__link" value="usa">Usa</option>
+                                        <option class="header__link" value="ru">Russia</option>
+                                        <option class="header__link" value="uz">Uzb</option>
+                                    </select>
+                                </a>
+                            </li>
+                            <li class="header__subitem">
+                                <a href="#" class="header__link">Contact</a>
+                            </li>
+                            <li class="header__subitem">
+                                <a href="#" class="header__link">Log In</a>
+                            </li>
+                            <li class="header__subitem">
+                                <a href="#" class="header__link"><img src="../media/svg/cart.svg" alt="cart"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="plp__router">
+        <div class="container">
+            <a class="plp__router--link" href="#">
+                Home 
+                <img class="plp__router--icon" src="../media/svg/right-black-icon.svg" alt="right-black-icon">
+                <span class="plp__router--span"> Beverages</span>
+            </a>
+        </div>
+    </div>
+
+    <h1 class="plp__title">Shop beverages</h1>
+
+    <div class="shop">
+        <div class="container">
+            <div class="shop__list">
+                <div class="shop__item">
+                    <div class="shop__item--content">
+                        <h2 class="shop__title">Variety Pack</h2>
+                    <p class="shop__text">-  Delicate and lean to sip -</p>
+                    <p class="shop__content"><b>Adaptogenic ingredients:</b>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="shop__content"><b>Adaptogenic ingredients:</b>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <div class="shop__item--wrapper">
+                        <img class="shop__image" src="../media/png/funkin.png" alt="funkin">
+                        <div class="shop__item--box">
+                        <h3 class="shop__subtitle">Bottle</h3>
+                        <ul class="shop__stars">
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/black-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/black-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/black-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/black-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/black-star.svg" alt="black">
+                        </li>
+                        <li>
+                            (32 reviews)
+                        </li>
+                        </ul>
+                        <p class="shop__item--price">$35.59</p>
+                        <a class="shop__item--cta" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop__item">
+                    <div class="shop__item--wrapper">
+                        <img class="shop__image" src="../media/png/funkin.png" alt="funkin">
+                        <div class="shop__item--box">
+                    <h3 class="shop__subtitle">Can</h3>
+                    <ul class="shop__stars">
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/white-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/white-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/white-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/white-star.svg" alt="black">
+                        </li>
+                        <li class="shop__star">
+                            <img class="shop__star--image" src="../media/svg/white-star.svg" alt="black">
+                        </li>
+                    </ul>
+                    <p class="shop__item--price">$15.00</p>
+                    <a class="shop__item--cta" href="#">Shop Now</a>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__rows">
+                    <div class="footer__row">
+                        <div class="footer__row--content">
+                            <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__description">Sign up to save 10% on your next order</p>
+                        <div class="footer__email">
+                            <input class="footer__email--input" placeholder="Email Address" type="text">
+                            <img class="footer__email--icon" src="../media/svg/arrow-right.svg" alt="arrow">
+                        </div>
+                        <ul class="footer__social-medias">
+                            <li class="footer__social-media">
+                                <a class="footer__social-media--link" href="#">
+                                    <img class="footer__social-media--icon footer__social-media--icon--instagram" src="../media/svg/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+
+                            <li class="footer__social-media">
+                                <a class="footer__social-media--link" href="#">
+                                    <img class="footer__social-media--icon" src="../media/svg/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+
+                            <li class="footer__social-media">
+                                <a class="footer__social-media--link" href="#">
+                                    <img class="footer__social-media--icon" src="../media/svg/pinterest.svg" alt="pinterest.svg">
+                                </a>
+                            </li>
+
+                            <li class="footer__social-media">
+                                <a class="footer__social-media--link" href="#">
+                                    <img class="footer__social-media--icon" src="../media/svg/twitter.svg" alt="twitter.svg">
+                                </a>
+                            </li>
+
+                            <li class="footer__social-media">
+                                <a class="footer__social-media--link" href="#">
+                                    <img class="footer__social-media--icon" src="../media/svg/youtube.svg" alt="youtube.svg">
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__row">
+                        <h3 class="footer__row--heading">Explore</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Account</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Gift Card</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Refer a Friend</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Affiliaties</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Corporate Gifting</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__row">
+                        <h3 class="footer__row--heading">Get Help</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">FAQ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Shipping & Returns</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Store Locator</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__row">
+                        <h3 class="footer__row--heading">Company</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Contact</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="footer__router">
+                        <ul class="footer__router--list">
+                            <li class="footer__router--item footer__router--item--heading">/de · swa/</li>
+                            <li class="footer__router--item footer__router--link">®2021 Сocktail</li>
+                            <li class="footer__router--item">
+                                <a class="footer__router--link" href="#">Privacy policy</a>
+                            </li>
+                            <li class="footer__router--item">
+                                <a class="footer__router--link" href="#">Terms of use</a>
+                            </li>
+                            <li class="footer__router--item">
+                                <a class="footer__router--link" href="#">AMASS</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
