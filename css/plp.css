@@ -1,3 +1,8 @@
+.plp__container{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .plp__router{
     height: 40px;
     border: 1px solid #CBCBCB;
@@ -24,76 +29,178 @@
     font-size: 70px;
     font-weight: 700;
     line-height: 64px;
-    margin: 40px 0%;
+    margin: 40px 0% 62px 0;
 }
 
 /* Shop */
+.shop__container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .shop__list{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4, auto);
 }
 .shop__title{
-    font-family: 'Philosopher';
     font-size: 50px;
     font-weight: 700;
     line-height: 64px;
+    font-family: 'Philosopher';
     margin: 0%;
-    margin-bottom: 8px;
     text-align: center;
 }
-.shop__text{
+.shop__info{
     font-size: 14px;
     font-weight: 500;
-    line-height: 170%;
+    line-height: 140%;
     text-align: center;
-    margin: 0%;
-}
-.shop__item--content{
-    width: 390px;
-    margin: auto;
 }
 .shop__content{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 170%;
-    padding-top: 16px;
+    letter-spacing: 0.1em;
     border-top: 1px solid #CBCBCB;
+    padding-top: 16px;
+    margin-bottom: 15px;
 }
 .shop__content b{
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-.shop__item--box{
-    text-align: center;
-}
-.shop__subtitle{
-    font-size: 12px;
     font-weight: 700;
-    line-height: 15px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 .shop__item{
-    width: 480px;
-    height: 635px;
-    border: 1px solid #CBCBCB;
+    /* width: 100%; */
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 0 40px;
 }
-.shop__item--price{
+.shop__products--item{
+    /* width: 100%;
+    margin: auto; */
+    /* text-align: center; */
+    padding: 24px 51px;
+}
+.shop__product--image{
+    width: 376px;
+    height: 478px;
+    object-fit: cover;
+}
+.shop__product--title{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.shop__products--content{
+    text-align: center;
+}
+.shop__star--list{
+    width: 183px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+    margin: auto;
+}
+.shop__product--price{
     font-size: 14px;
     font-weight: 400;
     line-height: 170%;
-    margin: 0%;
+    margin: 8px 0;
 }
-.shop__stars{
-    list-style-type: none;
+.shop__product--cta{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+}
+.shop__content--list{
     display: flex;
-    padding: 0%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 30px; */
+    width: 250px;
+    margin: auto;
+}
+.shop__content--item{
+    text-align: center;
+}
+.shop__content--image{
+    width: 40px;
+    height: 40px;
+}
+.shop__content--title{
+    font-weight: 700;
     font-size: 12px;
-    font-weight: 400;
     line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.shop__item--bg{
+    width: 480px;
+}
+.shop__item--bg--title{
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    color: #fff;
+    margin: 0%;
+    padding: 38px 40px;
+}
+.bg__happy{
+    background-image: url('../media/png/happy.png');
+    background-size: cover;
+    object-fit: cover;
+}
+.bg__lifestyle{
+    background-image: url('../media/png/lifestyle.png');
+    background-size: cover;
+    object-fit: cover;
+}
+.bg__flavor{
+    background-image: url('../media/png/flavor.png');
+    background-size: cover;
+    object-fit: cover;
+}
+
+.item1{
+    grid-area: 1 / 1 / span 1;
+}
+.item2{
+    grid-area: 1 / 2 / span 1;
+}
+.item3{
+    grid-area: 1 / 3 / span 1;
+}
+.item4{
+    grid-area: 2 / 1 / span 1;
+}
+.item5{
+    grid-area: 3 / 1 / span 1;
+}
+.item6{
+    grid-area: 4 / 1 / span 1;
+}
+.item8{
+    grid-area: 2 / 3 / span 1;
+}
+.item9{
+    grid-area: 3 / 2 / span 1;
+}
+.item10{
+    grid-area: 4 / 3 / span 1;
+}
+
+
+@media (max-width: 600px){
+    .plp__title{
+        font-size: 40px;
+    }
 }

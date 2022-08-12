@@ -3,7 +3,7 @@
     color: #7D7D7D;
 }
 .footer__wrapper{
-    padding: 80px 30px;
+    padding: 80px 30px 24px 30px;
 }
 .footer__rows{
     display: flex;
@@ -93,6 +93,18 @@
 .footer__router{
     width: 490px;
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__router--left{
+    width: 180px;
+    margin: 0%;
+    margin-bottom: 4px;
+}
+.footer__router--right{
+    width: 270px;
+    margin: 0%;
 }
 .footer__router--list{
     display: flex;
