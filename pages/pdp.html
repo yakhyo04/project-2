@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pdp.css">
+    <link rel="stylesheet" href="../css/plp.css">
 
     <!-- Google Fonts -->
     <!-- Montserrat -->
@@ -30,6 +32,7 @@
 
     <!-- Javascript -->
     <script src="../js/script.js" defer></script>
+    <script src="../js/pdp.js" defer></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -146,6 +149,253 @@
         </div>
     </header>
 
+    <!-- ROuter -->
+    <div class="plp__router">
+        <div class="plp__container">
+            <a class="plp__router--link" href="../index.html">
+                Home 
+                <img class="plp__router--icon" src="../media/svg/right-black-icon.svg" alt="right-black-icon">
+                <span class="plp__router--span"> Beverages</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- PDP product__details -->
+    <div class="product-details">
+        <div class="pdp__container">
+            <div class="product-details__wrapper">
+                <div class="item1">
+                    <p class="product-details__label">Non-Alcoholic drink</p>
+                    <h3 class="product-details__title">Medium - bodied</h3>
+                    <p class="product-details__description">Light and easy to sip</p>
+                    <div class="product-details__stars">
+                        <img src="../media/svg/black-star.svg" alt="black-star">
+                        <img src="../media/svg/black-star.svg" alt="black-star">
+                        <img src="../media/svg/black-star.svg" alt="black-star">
+                        <img src="../media/svg/black-star.svg" alt="black-star">
+                        <img src="../media/svg/black-star.svg" alt="black-star">
+                    </div>
+                    <div class="product-details__text">Made with natural birch, Strawberry and Apricot, an earthy and fruity taste. 
+                        <p>・100% Natural ingredients</p>
+                        <p>・Low Calories</p>
+                        <p>・Perfect for every occassion</p>
+                    </div>
+                    <div class="product-details__link">Share on 
+                        <div class="product-details__links">
+                            <img class="product-details__icon" src="../media/svg/facebook-icon.svg" alt="facebook-icon">
+                            <img class="product-details__icon" src="../media/svg/pinterest-icon.svg" alt="pinterest-icon">
+                            <img class="product-details__icon" src="../media/svg/email-icon.svg" alt="email-icon">
+                        </div>
+                    </div>
+                    <p class="product-details__cta">Shop the can <img src="../media/svg/right-icon.svg" alt=""></p>
+                </div>
+
+                <!-- <div> -->
+                    <div class="swiper product-details__swiper item2">
+                        <div class="swiper-wrapper product-details__swiper-wrapper">
+                            <div class="swiper-slide product-details__swiper-slide">
+                                <img src="../media/png/funkin.png" alt="funkin">
+                            </div>
+                            <div class="swiper-slide product-details__swiper-slide">
+                                <img src="../media/png/funkin.png" alt="funkin">
+                            </div>
+                            <div class="swiper-slide product-details__swiper-slide">
+                                <img src="../media/png/funkin.png" alt="funkin">
+                            </div>
+                        </div>
+                        <div class="product-details__paginations">
+                            <div>
+                                <img class="product-details__left" src="../media/svg/left-icon.svg" alt="left-icon">
+                            </div>
+                            <div>
+                                <div class="product-details__pagination"></div>
+                            </div>
+                            <div>
+                                <img class="product-details__right" src="../media/svg/right-icon.svg" alt="right-icon">
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <div class="item3">
+                    <p class="product-details__price">$35.59</p>
+                    <p class="product-details__adaptogenic">adaptogenic Ingredients</p>
+                    <div class="product-details__menu">
+                        <div class="product-details__item">
+                            <img class="product-details__item--image" src="../media/svg/currant.svg" alt="currant">
+                            <p class="product-details__item--title">Strawberry</p>
+                        </div>
+                        <div class="product-details__item">
+                            <img class="product-details__item--image" src="../media/svg/early-gray.svg" alt="early-gray">
+                            <p class="product-details__item--title">Birch</p>
+                        </div>
+                        <div class="product-details__item">
+                            <img class="product-details__item--image" src="../media/svg/pear.svg" alt="pear">
+                            <p class="product-details__item--title">Apricot</p>
+                        </div>
+                    </div>
+                    <p class="product-details__quantity--text">Quantity</p>
+                    <p class="product-details__complimentary--text">Complimentary domestic shipping on 2+ bottles.</p>
+                    <div class="product-details__numbers">
+                        <div class="product-details__number">1</div>
+                        <div class="product-details__number">2</div>
+                        <div class="product-details__number">3</div>
+                        <div class="product-details__number">6</div>
+                        <div class="product-details__number">12</div>
+                    </div>
+                    <form class="product-details__form">
+                        <input id="radio__btn" type="radio" name="choose" class="product-details__form--button" checked>
+                        <label for="radio__btn" class="product-details__form--label">$35.59   One time purcahse</label>
+                        <br>
+                        <input id="radio__btn--second" type="radio" name="choose" class="product-details__form--button">
+                        <label for="radio__btn--second" class="product-details__form--label">$30.00   Subscription (15% off) <a class="product-details__form--link" href="#">Details</a></label>
+                    </form>
+                    <p class="product-details__complimentary--text">Free domestic shipping over $50</p>
+                    <button class="product-details__button">Add to Bag</button>
+                    <div class="accordion__wrapper">
+                        <button class="accordion">Details <span>+</span></button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                    </div>
+                    <button class="accordion">Full Ingredients <span>+</span></button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                    </div>
+                    <button class="accordion">Product features <span>+</span></button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits and Ingredients -->
+    <div class="benefits">
+        <div class="container">
+            <h3 class="benefits__title">Benefits and Ingredients</h3>
+            <p class="benefits__info"><span>Benefits: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="swiper benefits__elements">
+                <div class="swiper-wrapper">
+                    <div class="benefit__element swiper-slide">
+                        <img class="benefit__image" src="../media/svg/strawberry.svg" alt="strawberry">
+                        <h4 class="benefit__title">Strawberry</h4>
+                        <p class="benefit__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                    <div class="benefit__element swiper-slide">
+                        <img class="benefit__image" src="../media/svg/birch-big.svg" alt="birch-big">
+                        <h4 class="benefit__title">Birch</h4>
+                        <p class="benefit__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                    <div class="benefit__element swiper-slide">
+                        <img class="benefit__image" src="../media/svg/apricot.svg" alt="apricot">
+                        <h4 class="benefit__title">Apricot</h4>
+                        <p class="benefit__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit__paginations"></div>
+            <div class="benefits__cta">Ingredient Glossary</div>
+        </div>
+    </div>
+
+    <!-- Enjoy -->
+    <div class="enjoy">
+        <div class="pdp__container">
+            <h3 class="enjoy__title">How to enjoy</h3>
+            <div class="enjoy__wrapper">
+                <div class="enjoy__div">
+                    <p class="enjoy__label">on the rocks</p>
+                    <p class="enjoy__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="enjoy__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div class="enjoy__image--wrapper">
+                    <img class="enjoy__image" src="../media/png/enjoy.png" alt="enjoy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel box -->
+    <div class="box">
+        <div class="pdp__container">
+            <div class="swiper box__carousel">
+                <div class="swiper-wrapper box__carousel--swiper-wrapper">
+                    <div class="swiper-slide box__swiper-slide">
+                        <div>
+                            <img class="box__image" src="../media/png/carousel-bg.png" alt="carousel-bg">
+                            <img class="box__product--image" src="../media/png/funkin.png" alt="funkin">
+                        </div>
+                        <div>
+                            <h3 class="box__product--title">Tom Collins Jr.</h3>
+                            <p class="box__ingredients--title">Ingredients</p>
+                            <p class="box__ingredients--item">3 oz Riverine</p>
+                            <p class="box__ingredients--item">3/4 oz Lemon Juice</p>
+                            <p class="box__ingredients--item">3/4 oz Simple Syrup</p>
+                            <p class="box__ingredients--item">Club Soda</p>
+                            <a class="box__product--cta" href="#">View Full recipe</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box__swiper-slide">
+                        <div>
+                            <img class="box__image" src="../media/png/carousel-bg.png" alt="carousel-bg">
+                            <img class="box__product--image" src="../media/png/funkin.png" alt="funkin">
+                        </div>
+                        <div>
+                            <h3 class="box__product--title">Tom Collins Jr.</h3>
+                            <p class="box__ingredients--title">Ingredients</p>
+                            <p class="box__ingredients--item">3 oz Riverine</p>
+                            <p class="box__ingredients--item">3/4 oz Lemon Juice</p>
+                            <p class="box__ingredients--item">3/4 oz Simple Syrup</p>
+                            <p class="box__ingredients--item">Club Soda</p>
+                            <a class="box__product--cta" href="#">View Full recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RichText -->
+    <div class="richtext">
+        <div class="pdp__container">
+            <div class="richtext__wrapper">
+                <div class="richtext__content">
+                    <p class="richtext__label">try this</p>
+                    <h3 class="richtext__title">Variety Pack</h3>
+                    <p class="richtext__description">Don’t know what to choose? Our variety pack is a three-bottle kit with De Soi’s Light, Medium and Full bodied flavors. Taste all 3 flavors at once!</p>
+                    <a class="richtext__cta" href="#">Shop Now</a>
+                </div>
+                <div class="richtext__image--item">
+                    <img class="richtext__image" src="../media/png/cocteles.png" alt="cocteles">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="join-us">Join us @сocktail</h3>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery__container">
+            <ul class="gallery__list">
+                <li class="gallery__item">
+                    <img class="gallery__image" src="../media/png/IG-1.png" alt="ig">
+                </li>
+                <li class="gallery__item">
+                    <img class="gallery__image" src="../media/png/IG-2.png" alt="ig">
+                </li>
+                <li class="gallery__item">
+                    <img class="gallery__image" src="../media/png/IG-3.png" alt="ig">
+                </li>
+                <li class="gallery__item">
+                    <img class="gallery__image" src="../media/png/IG-4.png" alt="ig">
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

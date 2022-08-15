@@ -1,5 +1,6 @@
 .plp__container{
     width: 1240px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -32,171 +33,165 @@
     margin: 40px 0% 62px 0;
 }
 
-/* Shop */
-.shop__container{
+/* cards */
+.cards__container{
     max-width: 1440px;
     margin: 0 auto;
 }
-.shop__list{
+.cards{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(4, auto);
+    min-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.shop__title{
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 64px;
-    font-family: 'Philosopher';
-    margin: 0%;
-    text-align: center;
-}
-.shop__info{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 140%;
-    text-align: center;
-}
-.shop__content{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 170%;
-    letter-spacing: 0.1em;
-    border-top: 1px solid #CBCBCB;
-    padding-top: 16px;
-    margin-bottom: 15px;
-}
-.shop__content b{
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.shop__item{
-    /* width: 100%; */
-    /* border: 1px solid red; */
+.card__details{
     display: flex;
+    border: 1px solid #cbcbcb;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 40px;
+    box-sizing: border-box;
+    height: 637px;
 }
-.shop__products--item{
-    /* width: 100%;
-    margin: auto; */
-    /* text-align: center; */
-    padding: 24px 51px;
-}
-.shop__product--image{
-    width: 376px;
-    height: 478px;
-    object-fit: cover;
-}
-.shop__product--title{
-    font-size: 12px;
+.detail__title{
+    font-family: 'Philosopher';
+    font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-.shop__products--content{
+    font-size: 50px;
+    line-height: 64px;
     text-align: center;
+    color: #000;
+    margin: 0%;
 }
-.shop__star--list{
-    width: 183px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0%;
-    margin: auto;
-}
-.shop__product--price{
+.detail__subtitle{
+    font-weight: 500;
     font-size: 14px;
-    font-weight: 400;
     line-height: 170%;
-    margin: 8px 0;
+    text-align: center;
+    color: #000;
+    padding: 8px 0 16px 0;
+    margin: 0%;
 }
-.shop__product--cta{
+.details__info{
+    font-weight: 400;
     font-size: 14px;
+    line-height: 170%;
+    color: #000;
+    border-top: 1px solid #cbcbcb;
+    padding: 16px 0;
+    margin: 0%;
+}
+.details__info span{
     font-weight: 700;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #000;
 }
-.shop__content--list{
+.card__view{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    /* padding: 0 30px; */
-    width: 250px;
-    margin: auto;
+    justify-content: center;
+    border: 1px solid #cbcbcb;
+    /* height: 637px; */
 }
-.shop__content--item{
-    text-align: center;
+.view__image{
+    max-width: 100%;
 }
-.shop__content--image{
-    width: 40px;
-    height: 40px;
-}
-.shop__content--title{
-    font-weight: 700;
+.view__title{
+    font-weight: 800;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase;
+    text-align: center;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
 }
-.shop__item--bg{
-    width: 480px;
+.view__stars{
+    display: flex;
+    padding: 9px 0;
 }
-.shop__item--bg--title{
+.view__price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    color: #000;
+}
+.view__cta{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 8px;
+}
+.details--bg{
+    background-color: #fffbf7 !important;
+}
+.ingredients__icon{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.details__ingredients{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 16px 0 25px 0;
+}
+.ingredients__element{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.banner__image{
+    background-image: url('../media/png/happy.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Philosopher';
+    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 90px;
     color: #fff;
-    margin: 0%;
-    padding: 38px 40px;
 }
-.bg__happy{
-    background-image: url('../media/png/happy.png');
-    background-size: cover;
-    object-fit: cover;
+.banner__lifestyle{
+    background-image: url('../media/png/lifestyle.png')
 }
-.bg__lifestyle{
-    background-image: url('../media/png/lifestyle.png');
-    background-size: cover;
-    object-fit: cover;
+.banner__flavor{
+    background-image: url('../media/png/flavor.png  ');
 }
-.bg__flavor{
-    background-image: url('../media/png/flavor.png');
-    background-size: cover;
-    object-fit: cover;
+.card__banner__wrap{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.item1{
-    grid-area: 1 / 1 / span 1;
+
+
+@media (max-width: 800px){
+    .mobile{
+        display: none;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .card__banner__wrap{
+        grid-column: auto;
+    }
+    .banner__image{
+        font-size: 32px;
+    }
 }
-.item2{
-    grid-area: 1 / 2 / span 1;
-}
-.item3{
-    grid-area: 1 / 3 / span 1;
-}
-.item4{
-    grid-area: 2 / 1 / span 1;
-}
-.item5{
-    grid-area: 3 / 1 / span 1;
-}
-.item6{
-    grid-area: 4 / 1 / span 1;
-}
-.item8{
-    grid-area: 2 / 3 / span 1;
-}
-.item9{
-    grid-area: 3 / 2 / span 1;
-}
-.item10{
-    grid-area: 4 / 3 / span 1;
-}
+
 
 
 @media (max-width: 600px){
